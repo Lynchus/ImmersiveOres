@@ -81,8 +81,8 @@ public class EnderiumConfig {
         configs.addKeyValuePair(new Pair<>("nightVisionEnderiumArmor", true), "Night Vision effect for Enderium Armor");
         configs.addKeyValuePair(new Pair<>("immuneToFallDamageEnderiumArmor", true), "Immunity to fall damage for Enderium Armor");
         configs.addKeyValuePair(new Pair<>("fireResistanceEnderiumArmor", true), "Fire resistance for Enderium Armor");
-        configs.addKeyValuePair(new Pair<>("neverLoseHungerEnderiumArmor", true), "Never lose hunger with Enderium Armor");
-        configs.addKeyValuePair(new Pair<>("canFlyEnderiumArmor", true), "Ability to fly with Enderium Armor");
+        configs.addKeyValuePair(new Pair<>("neverLoseHungerEnderiumArmor", false), "Never lose hunger with Enderium Armor");
+        configs.addKeyValuePair(new Pair<>("canFlyEnderiumArmor", false), "Ability to fly with Enderium Armor");
         configs.addKeyValuePair(new Pair<>("canWalkOnPowderedSnowEnderium", true), "Can walk on powdered snow with Enderium Armor");
         configs.addKeyValuePair(new Pair<>("makesPiglinsNeutralEnderium", true), "Makes Piglins neutral with Enderium Armor");
         configs.addKeyValuePair(new Pair<>("endermanWillNotBeAngryWithYouEnderium", true), "Endermen won't be angry with you with Enderium Armor");
@@ -90,7 +90,7 @@ public class EnderiumConfig {
         configs.addComment("Enderium Bow Settings");
         configs.addKeyValuePair(new Pair<>("enchantmentValueEnderiumBow", 5), "Enchantment value of Enderium Bow");
         configs.addKeyValuePair(new Pair<>("damageEnderiumBow", 14), "Damage value of Enderium Bow");
-        configs.addKeyValuePair(new Pair<>("arrowCountEnderiumBow", 4), "Arrow count for Enderium Bow");
+        configs.addKeyValuePair(new Pair<>("arrowCountEnderiumBow", 1), "Arrow count for Enderium Bow");
 
         configs.addComment("Enderium Tool Tier Base Properties");
         configs.addKeyValuePair(new Pair<>("speedEnderiumTier", 50), "Speed value of Enderium tier");
@@ -149,15 +149,15 @@ public class EnderiumConfig {
         nightVisionEnderiumArmor = ENDERIUM_CONFIG.getOrDefault("nightVisionEnderiumArmor", true);
         immuneToFallDamageEnderiumArmor = ENDERIUM_CONFIG.getOrDefault("immuneToFallDamageEnderiumArmor", true);
         fireResistanceEnderiumArmor = ENDERIUM_CONFIG.getOrDefault("fireResistanceEnderiumArmor", true);
-        neverLoseHungerEnderiumArmor = ENDERIUM_CONFIG.getOrDefault("neverLoseHungerEnderiumArmor", true);
-        canFlyEnderiumArmor = ENDERIUM_CONFIG.getOrDefault("canFlyEnderiumArmor", true);
+        neverLoseHungerEnderiumArmor = ENDERIUM_CONFIG.getOrDefault("neverLoseHungerEnderiumArmor", false);
+        canFlyEnderiumArmor = ENDERIUM_CONFIG.getOrDefault("canFlyEnderiumArmor", false);
         canWalkOnPowderedSnowEnderium = ENDERIUM_CONFIG.getOrDefault("canWalkOnPowderedSnowEnderium", true);
         makesPiglinsNeutralEnderium = ENDERIUM_CONFIG.getOrDefault("makesPiglinsNeutralEnderium", true);
         endermanWillNotBeAngryWithYouEnderium = ENDERIUM_CONFIG.getOrDefault("endermanWillNotBeAngryWithYouEnderium", true);
 
         enchantmentValueEnderiumBow = ENDERIUM_CONFIG.getOrDefault("enchantmentValueEnderiumBow", 5);
         damageEnderiumBow = ENDERIUM_CONFIG.getOrDefault("damageEnderiumBow", 14);
-        arrowCountEnderiumBow = ENDERIUM_CONFIG.getOrDefault("arrowCountEnderiumBow", 4);
+        arrowCountEnderiumBow = ENDERIUM_CONFIG.getOrDefault("arrowCountEnderiumBow", 1);
 
         speedEnderiumTier = ENDERIUM_CONFIG.getOrDefault("speedEnderiumTier", 50);
         enchantmentValueEnderiumTier = ENDERIUM_CONFIG.getOrDefault("enchantmentValueEnderiumTier", 65);
