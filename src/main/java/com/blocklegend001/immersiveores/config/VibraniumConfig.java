@@ -73,13 +73,13 @@ public class VibraniumConfig {
         configs.addComment("--- Vibranium Armor Special Effects and Abilities ---");
         configs.addKeyValuePair(new Pair<>("speedIVibraniumArmor", true), "Speed I effect for Vibranium Armor");
         configs.addKeyValuePair(new Pair<>("jumpIVibraniumArmor", true), "Jump I effect for Vibranium Armor");
-        configs.addKeyValuePair(new Pair<>("nightVisionVibraniumArmor", true), "Night Vision effect for Vibranium Armor");
+        configs.addKeyValuePair(new Pair<>("nightVisionVibraniumArmor", false), "Night Vision effect for Vibranium Armor");
         configs.addKeyValuePair(new Pair<>("canWalkOnPowderedSnowVibranium", true), "Can walk on powdered snow with Vibranium Armor");
 
         configs.addComment("--- Vibranium Bow Settings ---");
         configs.addKeyValuePair(new Pair<>("enchantmentValueVibraniumBow", 5), "Enchantment value of Vibranium Bow");
         configs.addKeyValuePair(new Pair<>("damageVibraniumBow", 5), "Damage value of Vibranium Bow");
-        configs.addKeyValuePair(new Pair<>("arrowCountVibraniumBow", 2), "Arrow count for Vibranium Bow");
+        configs.addKeyValuePair(new Pair<>("arrowCountVibraniumBow", 1), "Arrow count for Vibranium Bow");
 
         configs.addComment("--- Vibranium Tool Tier Base Properties ---");
         configs.addKeyValuePair(new Pair<>("speedVibraniumTier", 30), "Speed value of Vibranium tier");
@@ -90,19 +90,19 @@ public class VibraniumConfig {
 
         configs.addComment("--- Vibranium Pickaxe Stats ---");
         configs.addKeyValuePair(new Pair<>("attackDamageVibraniumPickaxe", 7), "Attack damage of Vibranium Pickaxe");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumPickaxe", 0.5), "Attack speed of Vibranium Pickaxe");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumPickaxe", -3.0), "Attack speed of Vibranium Pickaxe");
 
         configs.addComment("--- Vibranium Axe Stats ---");
         configs.addKeyValuePair(new Pair<>("attackDamageVibraniumAxe", 12), "Attack damage of Vibranium Axe");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumAxe", 0.5), "Attack speed of Vibranium Axe");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumAxe", -2.75), "Attack speed of Vibranium Axe");
 
         configs.addComment("--- Vibranium Shovel Stats ---");
         configs.addKeyValuePair(new Pair<>("attackDamageVibraniumShovel", 7), "Attack damage of Vibranium Shovel");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumShovel", 0.5), "Attack speed of Vibranium Shovel");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumShovel", -3.0), "Attack speed of Vibranium Shovel");
 
         configs.addComment("--- Vibranium Sword Stats ---");
         configs.addKeyValuePair(new Pair<>("attackDamageVibraniumSword", 10), "Attack damage of Vibranium Sword");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumSword", 0.5), "Attack speed of Vibranium Sword");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVibraniumSword", -2.2), "Attack speed of Vibranium Sword");
 
         configs.addComment("--- Vibranium Hoe Stats ---");
         configs.addKeyValuePair(new Pair<>("attackDamageVibraniumHoe", 7), "Attack damage of Vibranium Hoe");
@@ -137,7 +137,7 @@ public class VibraniumConfig {
 
         speedIVibraniumArmor = VIBRANIUM_CONFIG.getOrDefault("speedIVibraniumArmor", true);
         jumpIVibraniumArmor = VIBRANIUM_CONFIG.getOrDefault("jumpIVibraniumArmor", true);
-        nightVisionVibraniumArmor = VIBRANIUM_CONFIG.getOrDefault("nightVisionVibraniumArmor", true);
+        nightVisionVibraniumArmor = VIBRANIUM_CONFIG.getOrDefault("nightVisionVibraniumArmor", false);
         canWalkOnPowderedSnowVibranium = VIBRANIUM_CONFIG.getOrDefault("canWalkOnPowderedSnowVibranium", true);
 
         speedVibraniumTier = VIBRANIUM_CONFIG.getOrDefault("speedVibraniumTier", 30);
@@ -147,16 +147,16 @@ public class VibraniumConfig {
         enchantmentValueVibraniumTier = VIBRANIUM_CONFIG.getOrDefault("enchantmentValueVibraniumTier", 55);
 
         attackDamageVibraniumPickaxe = VIBRANIUM_CONFIG.getOrDefault("attackDamageVibraniumPickaxe", 7);
-        attackSpeedVibraniumPickaxe = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumPickaxe", 0.5);
+        attackSpeedVibraniumPickaxe = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumPickaxe", -3.0);
 
         attackDamageVibraniumAxe = VIBRANIUM_CONFIG.getOrDefault("attackDamageVibraniumAxe", 12);
-        attackSpeedVibraniumAxe = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumAxe", 0.5);
+        attackSpeedVibraniumAxe = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumAxe", -2.75);
 
         attackDamageVibraniumShovel = VIBRANIUM_CONFIG.getOrDefault("attackDamageVibraniumShovel", 7);
-        attackSpeedVibraniumShovel = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumShovel", 0.5);
+        attackSpeedVibraniumShovel = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumShovel", -3.0);
 
         attackDamageVibraniumSword = VIBRANIUM_CONFIG.getOrDefault("attackDamageVibraniumSword", 10);
-        attackSpeedVibraniumSword = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumSword", 0.5);
+        attackSpeedVibraniumSword = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumSword", -2.2);
 
         attackDamageVibraniumHoe = VIBRANIUM_CONFIG.getOrDefault("attackDamageVibraniumHoe", 7);
         attackSpeedVibraniumHoe = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumHoe", 0.5);
@@ -172,6 +172,6 @@ public class VibraniumConfig {
         attackSpeedVibraniumExcavator = VIBRANIUM_CONFIG.getOrDefault("attackSpeedVibraniumExcavator", 0.5);
         radiusVibraniumExcavator = VIBRANIUM_CONFIG.getOrDefault("radiusVibraniumExcavator", 1);
 
-        arrowCountVibraniumBow = VIBRANIUM_CONFIG.getOrDefault("arrowCountVibraniumBow", 2);
+        arrowCountVibraniumBow = VIBRANIUM_CONFIG.getOrDefault("arrowCountVibraniumBow", 1);
     }
 }
