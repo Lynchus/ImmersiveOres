@@ -76,17 +76,17 @@ public class VulpusConfig {
         configs.addComment("Vulpus Armor Special Effects and Abilities");
         configs.addKeyValuePair(new Pair<>("speedIIVulpusArmor", true), "Speed II effect for Vulpus Armor");
         configs.addKeyValuePair(new Pair<>("jumpIIVulpusArmor", true), "Jump II effect for Vulpus Armor");
-        configs.addKeyValuePair(new Pair<>("nightVisionVulpusArmor", true), "Night Vision for Vulpus Armor");
+        configs.addKeyValuePair(new Pair<>("nightVisionVulpusArmor", false), "Night Vision for Vulpus Armor");
         configs.addKeyValuePair(new Pair<>("fireResistanceVulpusArmor", true), "Fire Resistance for Vulpus Armor");
         configs.addKeyValuePair(new Pair<>("immuneToFallDamageVulpusArmor", true), "Fall Damage Immunity for Vulpus Armor");
-        configs.addKeyValuePair(new Pair<>("neverLoseHungerVulpusArmor", true), "Prevention of Hunger Loss for Vulpus Armor");
+        configs.addKeyValuePair(new Pair<>("neverLoseHungerVulpusArmor", false), "Prevention of Hunger Loss for Vulpus Armor");
         configs.addKeyValuePair(new Pair<>("canWalkOnPowderedSnowVulpus", true), "Walking on Powdered Snow with Vulpus Armor");
         configs.addKeyValuePair(new Pair<>("makesPiglinsNeutralVulpus", true), "Piglins become Neutral with Vulpus Armor");
 
         configs.addComment("Vulpus Bow");
         configs.addKeyValuePair(new Pair<>("enchantmentValueVulpusBow", 5), "Enchantment value of Vulpus Bow");
         configs.addKeyValuePair(new Pair<>("damageVulpusBow", 10), "Damage of Vulpus Bow");
-        configs.addKeyValuePair(new Pair<>("arrowCountVulpusBow", 3), "Arrow count for Vulpus Bow");
+        configs.addKeyValuePair(new Pair<>("arrowCountVulpusBow", 1), "Arrow count for Vulpus Bow");
 
         configs.addComment("Vulpus Tool Tier Base");
         configs.addKeyValuePair(new Pair<>("speedVulpusTier", 40), "Mining speed of Vulpus tier");
@@ -97,19 +97,19 @@ public class VulpusConfig {
 
         configs.addComment("Vulpus Pickaxe");
         configs.addKeyValuePair(new Pair<>("attackDamageVulpusPickaxe", 10), "Attack damage of Vulpus Pickaxe");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusPickaxe", 0.5), "Attack speed of Vulpus Pickaxe");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusPickaxe", -3.0), "Attack speed of Vulpus Pickaxe");
 
         configs.addComment("Vulpus Axe");
-        configs.addKeyValuePair(new Pair<>("attackDamageVulpusAxe", 15), "Attack damage of Vulpus Axe");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusAxe", 0.5), "Attack speed of Vulpus Axe");
+        configs.addKeyValuePair(new Pair<>("attackDamageVulpusAxe", 16), "Attack damage of Vulpus Axe");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusAxe", -2.75), "Attack speed of Vulpus Axe");
 
         configs.addComment("Vulpus Shovel");
         configs.addKeyValuePair(new Pair<>("attackDamageVulpusShovel", 10), "Attack damage of Vulpus Shovel");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusShovel", 0.5), "Attack speed of Vulpus Shovel");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusShovel", -3.0), "Attack speed of Vulpus Shovel");
 
         configs.addComment("Vulpus Sword");
         configs.addKeyValuePair(new Pair<>("attackDamageVulpusSword", 14), "Attack damage of Vulpus Sword");
-        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusSword", 0.5), "Attack speed of Vulpus Sword");
+        configs.addKeyValuePair(new Pair<>("attackSpeedVulpusSword", -2.0), "Attack speed of Vulpus Sword");
 
         configs.addComment("Vulpus Hoe");
         configs.addKeyValuePair(new Pair<>("attackDamageVulpusHoe", 10), "Attack damage of Vulpus Hoe");
@@ -144,10 +144,10 @@ public class VulpusConfig {
 
         speedIIVulpusArmor = VULPUS_CONFIG.getOrDefault("speedIIVulpusArmor", true);
         jumpIIVulpusArmor = VULPUS_CONFIG.getOrDefault("jumpIIVulpusArmor", true);
-        nightVisionVulpusArmor = VULPUS_CONFIG.getOrDefault("nightVisionVulpusArmor", true);
+        nightVisionVulpusArmor = VULPUS_CONFIG.getOrDefault("nightVisionVulpusArmor", false);
         fireResistanceVulpusArmor = VULPUS_CONFIG.getOrDefault("fireResistanceVulpusArmor", true);
         immuneToFallDamageVulpusArmor = VULPUS_CONFIG.getOrDefault("immuneToFallDamageVulpusArmor", true);
-        neverLoseHungerVulpusArmor = VULPUS_CONFIG.getOrDefault("neverLoseHungerVulpusArmor", true);
+        neverLoseHungerVulpusArmor = VULPUS_CONFIG.getOrDefault("neverLoseHungerVulpusArmor", false);
         canWalkOnPowderedSnowVulpus = VULPUS_CONFIG.getOrDefault("canWalkOnPowderedSnowVulpus", true);
         makesPiglinsNeutralVulpus = VULPUS_CONFIG.getOrDefault("makesPiglinsNeutralVulpus", true);
 
@@ -159,19 +159,19 @@ public class VulpusConfig {
 
         enchantmentValueVulpusBow = VULPUS_CONFIG.getOrDefault("enchantmentValueVulpusBow", 5);
         damageVulpusBow = VULPUS_CONFIG.getOrDefault("damageVulpusBow", 10);
-        arrowCountVulpusBow = VULPUS_CONFIG.getOrDefault("arrowCountVulpusBow", 3);
+        arrowCountVulpusBow = VULPUS_CONFIG.getOrDefault("arrowCountVulpusBow", 1);
 
         attackDamageVulpusPickaxe = VULPUS_CONFIG.getOrDefault("attackDamageVulpusPickaxe", 10);
-        attackSpeedVulpusPickaxe = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusPickaxe", 0.5);
+        attackSpeedVulpusPickaxe = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusPickaxe", -3.0);
 
         attackDamageVulpusAxe = VULPUS_CONFIG.getOrDefault("attackDamageVulpusAxe", 15);
-        attackSpeedVulpusAxe = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusAxe", 0.5);
+        attackSpeedVulpusAxe = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusAxe", -2.75);
 
         attackDamageVulpusShovel = VULPUS_CONFIG.getOrDefault("attackDamageVulpusShovel", 10);
-        attackSpeedVulpusShovel = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusShovel", 0.5);
+        attackSpeedVulpusShovel = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusShovel", -3.0);
 
         attackDamageVulpusSword = VULPUS_CONFIG.getOrDefault("attackDamageVulpusSword", 14);
-        attackSpeedVulpusSword = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusSword", 0.5);
+        attackSpeedVulpusSword = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusSword", -2.0);
 
         attackDamageVulpusHoe = VULPUS_CONFIG.getOrDefault("attackDamageVulpusHoe", 10);
         attackSpeedVulpusHoe = VULPUS_CONFIG.getOrDefault("attackSpeedVulpusHoe", 0.5);
